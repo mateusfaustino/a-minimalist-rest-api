@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const PORT = 8080
+const PORT = process.env.port || 8080
 
 app.get('/route-2',(req,res)=>{
     res.json(
